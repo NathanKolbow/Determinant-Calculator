@@ -21,6 +21,7 @@ public class Main {
 		}
 		double det = Calculator.calculateDeterminant(matrix);
 		System.out.println("Determinant: " + det);
+		in.close();
 	}
 	
 }
