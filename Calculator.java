@@ -2,17 +2,17 @@
 public class Calculator {
 
 	public static void main(String[] args) {
-		double[][] matrix = new double[][] { { 1, 0, 3 },
-											{ 2, 3, 1 },
-											{ 4, 4, 1 } };
+		double[][] matrix = new double[][] { { 13, 1, 7, 3},
+											 { 1, 1, 3, 2.5 },
+											 { 3.7, 8, 8.7, 0},
+											 { 12, 3, 3.3, 9}};
 
 		double det = calculateDeterminant(matrix);
 		System.out.println(det);
 	}
 
 	public static double calculateDeterminant(double[][] matrix) {
-		double res = calc(matrix);
-		return res;
+		return calc(matrix);
 	}
 
 	private static double calc(double[][] matrix) {
