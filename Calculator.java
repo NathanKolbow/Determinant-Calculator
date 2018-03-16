@@ -1,5 +1,5 @@
 
-public class Calculator {
+class Calculator {
 
 	public static void main(String[] args) {
 		double[][] matrix = new double[][] { { 13, 1, 7, 3},
@@ -16,6 +16,8 @@ public class Calculator {
 	}
 
 	private static double calc(double[][] matrix) {
+		if(matrix.length == 1)
+			return matrix[0][0];
 		if (matrix.length == 2)
 			return (matrix[0][0] * matrix[1][1]) - (matrix[1][0] * matrix[0][1]);
 		
