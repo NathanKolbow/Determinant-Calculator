@@ -1,5 +1,3 @@
-
-
 def calculate_determinant(matrix):
 	if len(matrix) is 1:
 		return matrix[0][0]
